@@ -59,3 +59,16 @@ for (let i = 0; i < tempsF.length; i++) {
   tot_temperature_in_celsius =
     tot_temperature_in_celsius + fToC(tempsF[i]);
 }
+
+const avg_temperature_in_fahrenheit = tot_temperature_in_fahrenheit / 30;
+const avg_temperature_in_celsius = tot_temperature_in_celsius / 30;
+
+
+console.log(
+    {
+        tot_temperature_in_fahrenheit,
+        tot_temperature_in_celsius,
+        avg_temperature_in_fahrenheit,
+        avg_temperature_in_celsius,
+    }
+);
