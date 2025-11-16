@@ -29,6 +29,9 @@ const day28TempC = 17;
 const day29TempF = 76;
 const day30TempC = 29;
 
+const cToF = c => (c * 9) / 5 + 32;
+const fToC = f => ((f - 32) * 5) / 9;
+
 const tempsF = [
   day1TempF,
   day3TempF,
@@ -95,14 +98,12 @@ const avg_temperature_in_fahrenheit = tot_temperature_in_fahrenheit / 30;
 const avg_temperature_in_celsius = tot_temperature_in_celsius / 30;
 
 
-console.log(
-    {
-        tot_temperature_in_fahrenheit,
-        tot_temperature_in_celsius,
-        avg_temperature_in_fahrenheit,
-        avg_temperature_in_celsius,
-    }
-);
+console.log({
+    tot_temperature_in_fahrenheit,
+    tot_temperature_in_celsius,
+    avg_temperature_in_fahrenheit,
+    avg_temperature_in_celsius,
+});
 
 
 module.exports = {
