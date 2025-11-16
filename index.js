@@ -33,3 +33,29 @@ const tempsC = [
   day28TempC,
   day30TempC,
 ];
+
+// Fahrenheit
+
+let tot_temperature_in_fahrenheit = 0;
+
+for (let i = 0; i < tempsF.length; i++) {
+  tot_temperature_in_fahrenheit += tempsF[i];
+}
+
+for (let i = 0; i < tempsC.length; i++) {
+  tot_temperature_in_fahrenheit =
+    tot_temperature_in_fahrenheit + cToF(tempsC[i]);
+}
+
+// Celsius
+
+let tot_temperature_in_celsius = 0;
+
+for (let i = 0; i < tempsC.length; i++) {
+  tot_temperature_in_celsius += tempsC[i];
+}
+
+for (let i = 0; i < tempsF.length; i++) {
+  tot_temperature_in_celsius =
+    tot_temperature_in_celsius + fToC(tempsF[i]);
+}
