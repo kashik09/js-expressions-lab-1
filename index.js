@@ -72,3 +72,11 @@ console.log(
         avg_temperature_in_celsius,
     }
 );
+
+
+module.exports = {
+  tot_temperature_in_fahrenheit,
+  tot_temperature_in_celsius,
+  avg_temperature_in_fahrenheit,
+  avg_temperature_in_celsius,
+};
